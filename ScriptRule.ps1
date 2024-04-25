@@ -1,9 +1,15 @@
 #Software test-list arrays
 [string[]]$SoftwareNameTestList = @(
-    "Google Chrome"
+    "McAfee Endpoint Security Firewall",
+    "McAfee Endpoint Security Platform",
+    "McAfee Endpoint Security Threat Prevention",
+    "McAfee Endpoint Security Web Control"
 )
 [string[]]$SoftwareVersionTestList = @(
-    "124.0.6367.61"
+    "10.7.0",
+    "10.7.0",
+    "10.7.0",
+    "10.7.0"
 )
 
 ##### DO NOT EDIT BELOW ####
