@@ -1,10 +1,3 @@
-try {
-	if(-NOT (Test-Path -LiteralPath "HKLM:\SOFTWARE\LewisSilkin\Google Chrome 70.55.49231.0.1")){ Write-Output "Registry Not Detected Google Chrome 70.55.49231.0.1"; Exit 1 };
-	if((Get-ItemPropertyValue -LiteralPath 'HKLM:\SOFTWARE\LewisSilkin\Google Chrome 70.55.49231.0.1' -Name 'Installed' -ea SilentlyContinue) -eq '1') {  } else { Write-Output "Registry Not Detected Google Chrome 70.55.49231.0.1"; Exit 1 };
-}
-catch { Write-Output "Registry Not Detected Google Chrome 70.55.49231.0.1"; Exit 1 }
-Write-Output "Registry Detected Google Chrome 70.55.49231.0.1"
-
 #Software test-list arrays
 [string[]]$SoftwareNameTestList = @(
     "Google Chrome"
